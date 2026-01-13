@@ -1,0 +1,74 @@
+body{
+    background-color: #0f172a; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  } 
+
+div{
+  background-color: #f1f5f9; 
+  padding: 25px;
+  border-radius: 24px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  max-width: 320px;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+}
+
+input{
+  grid-column: span 4;
+  height: 70px;
+  background-color: #ffffff;
+  border: 2px solid #cbd5e1;
+  border-radius: 12px;
+  font-size: 32px;
+  text-align: right;
+  padding: 0 15px;
+  margin-bottom: 15px;
+  color: #1a1a1a;
+  font-family: 'Courier New', Courier, monospace; 
+  outline: none;
+}
+
+button{
+  height: 60px;
+  font-size: 20px;
+  font-weight: 700;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  color: #1a1a1a; 
+  background-color: #e2e8f0; 
+  transition: all 0.1s ease;
+  box-shadow: 0 5px 0 #94a3b8; 
+}
+
+button:hover {
+  transform: translateY(-3px); /* O botão sobe um pouco */
+  filter: brightness(1.1); /* Fica mais claro */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+  transform: translateY(4px);
+  box-shadow: 0 1px 0 #94a3b8;
+}
+
+#soma, #subtracao, #multiplicacao, #divisao {
+  background-color: #c084fc; /* Roxo vibrante */
+  box-shadow: 0 5px 0 #9333ea;
+}
+
+#limpar{
+  background-color: #4ade80;
+  box-shadow: 0 5px 0 #16a34a;
+}
+
+#igual{
+  background-color: #38bdf8;
+  box-shadow: 0 5px 0 #0284c7;
+}
